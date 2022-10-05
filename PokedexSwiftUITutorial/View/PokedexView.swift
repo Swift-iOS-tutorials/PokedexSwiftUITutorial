@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PokedexView: View {
     
+    @StateObject var viewModel = PokemonVIewModel()
+    
     private let gridItems = [GridItem(.flexible()), GridItem(.flexible())] //it means that we will have 2 item per row
     
     var body: some View {
@@ -16,7 +18,7 @@ struct PokedexView: View {
             ScrollView{
                 LazyVGrid(columns: gridItems, spacing: 16 ){
                     ForEach(0..<151) { _ in
-                        PokemonCellView()
+                        PokemonCellView(pockemon: MOCH_POKEMON[2])
                     }
                 }
             }

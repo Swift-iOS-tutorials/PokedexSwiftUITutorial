@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct PokemonCellView: View {
+    let pockemon: Pokemon
     var body: some View {
         ZStack{
             VStack(alignment: .leading){
-                Text("Bulbasaur")
+                Text(pockemon.name.capitalized)
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding(.top, 8)
                     .padding(.leading)
                 
                 HStack{
-                    Text("Poison")
+                    Text(pockemon.type)
                         .font(.subheadline).bold()
                         .foregroundColor(.white)
                         .padding(.horizontal, 16)
@@ -45,6 +46,6 @@ struct PokemonCellView: View {
 
 struct PokemonCellView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonCellView()
+        PokemonCellView(pockemon: MOCH_POKEMON[3])
     }
 }
