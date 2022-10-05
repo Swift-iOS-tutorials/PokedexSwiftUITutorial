@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B08F76728ED7CBE00946B94 /* PokemonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08F76628ED7CBE00946B94 /* PokemonCellView.swift */; };
+		0B08F76928EDA26C00946B94 /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08F76828EDA26C00946B94 /* PokedexView.swift */; };
 		0B9E1FDC28ED6FB6009F00D2 /* PokedexSwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E1FDB28ED6FB6009F00D2 /* PokedexSwiftUITutorialApp.swift */; };
 		0B9E1FDE28ED6FB6009F00D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E1FDD28ED6FB6009F00D2 /* ContentView.swift */; };
 		0B9E1FE028ED6FB7009F00D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9E1FDF28ED6FB7009F00D2 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		0B08F76628ED7CBE00946B94 /* PokemonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCellView.swift; sourceTree = "<group>"; };
+		0B08F76828EDA26C00946B94 /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
 		0B9E1FD828ED6FB6009F00D2 /* PokedexSwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokedexSwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9E1FDB28ED6FB6009F00D2 /* PokedexSwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexSwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		0B9E1FDD28ED6FB6009F00D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				0B08F76628ED7CBE00946B94 /* PokemonCellView.swift */,
+				0B08F76828EDA26C00946B94 /* PokedexView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				0B08F76728ED7CBE00946B94 /* PokemonCellView.swift in Sources */,
 				0B9E1FDE28ED6FB6009F00D2 /* ContentView.swift in Sources */,
 				0B9E1FDC28ED6FB6009F00D2 /* PokedexSwiftUITutorialApp.swift in Sources */,
+				0B08F76928EDA26C00946B94 /* PokedexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

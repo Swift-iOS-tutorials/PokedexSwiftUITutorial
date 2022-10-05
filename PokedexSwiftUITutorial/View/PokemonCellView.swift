@@ -14,7 +14,7 @@ struct PokemonCellView: View {
                 Text("Bulbasaur")
                     .font(.headline)
                     .foregroundColor(.white)
-                    .padding(.top,4)
+                    .padding(.top, 8)
                     .padding(.leading)
                 
                 HStack{
@@ -33,11 +33,13 @@ struct PokemonCellView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 68, height: 68)
+                        .padding([.bottom, .trailing], 4)
                 }
             }
         }
         .background(Color.green)
         .cornerRadius(12)
+        .shadow(color: .green, radius: 6, x: 0.0, y: 0.0)
     }
 }
 
