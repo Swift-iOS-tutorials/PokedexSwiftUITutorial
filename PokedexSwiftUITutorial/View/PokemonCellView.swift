@@ -9,6 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct PokemonCellView: View {
+    let viewModel: PokemonVIewModel
     let pockemon: Pokemon
     var body: some View {
         ZStack{
@@ -39,14 +40,14 @@ struct PokemonCellView: View {
                 }
             }
         }
-        .background(Color.green)
+        .background(Color(viewModel.backGroundColor(forType: pockemon.type)))
         .cornerRadius(12)
-        .shadow(color: .green, radius: 6, x: 0.0, y: 0.0)
+        .shadow(color: Color(viewModel.backGroundColor(forType: pockemon.type)), radius: 6, x: 0.0, y: 0.0)
     }
 }
 
-struct PokemonCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        PokemonCellView(pockemon: MOCH_POKEMON[3])
-    }
-}
+//struct PokemonCellView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PokemonCellView(pockemon: MOCH_POKEMON[3])
+//    }
+//}
